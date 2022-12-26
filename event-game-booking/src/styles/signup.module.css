@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mainDiv{
+    border: 2px solid gray;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin:50px 450px;
+    background-color: rgb(203, 92, 58);
+}
+
+.form{
+    /* border: 1px solid red; */
+    width: 450px;
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin:20px;
+    text-align: center;
+    /* padding-top: 30px; */
+}
+
+input{
+    /* border: 1px solid red; */
+    width: 320px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button{
+    /* border: 1px solid red; */
+    width: 120px;
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgb(39, 122, 195);
+    color: black;
+}
+
+p{
+    font-size: 18px;
+    margin-top: 30px;
+}

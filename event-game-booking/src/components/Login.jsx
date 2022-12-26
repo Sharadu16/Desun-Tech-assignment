@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {useNavigate,Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+import styled from "../styles/login.module.css"
 
 const Login = () => {
     
@@ -24,8 +25,8 @@ const Login = () => {
     }
 
   return (
-    <div>
-        <form onSubmit={HandleFormSubmit}>
+    <div className={styled.mainDiv}>
+        <form className={styled.form} onSubmit={HandleFormSubmit}>
             <h1>Login Form</h1>
             <div>
                 <label>Username : </label>
@@ -36,7 +37,8 @@ const Login = () => {
                 <br/>
                 <button type="submit">Login</button>
                 <br/>
-                <Link to="/Signup"><span>Sign up here</span></Link>
+                {/* <Link to="/Signup"><span>Click here for Register</span></Link> */}
+                <p>New user ? {<a href='./Signup'>Click here for Register</a>}</p>
             </div>
         </form>
     </div>

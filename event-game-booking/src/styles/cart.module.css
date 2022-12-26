@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    width: 810px;
+    height: auto;
+    margin-left: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card{
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 470px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img{
+    width:240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.about{
+   font-size: 11px;
+   padding: 0px 20px;
+}
+
+button{
+   width: 120px;
+   height: 40px;
+   font-size: 16px;
+}
+
+button:hover{
+    cursor: pointer;
+}

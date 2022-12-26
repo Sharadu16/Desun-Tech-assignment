@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+import styled from "../styles/signup.module.css"
 
 const Signup = () => {
     const [email, setEmail] = useState("");
@@ -28,10 +29,9 @@ const Signup = () => {
   }
  
   return (
-    <div>
-        <form onSubmit={HandleFormSubmit}>
+    <div className={styled.mainDiv}>
+        <form className={styled.form} onSubmit={HandleFormSubmit}>
             <h1>Sign-up Form</h1>
-            <div>
                 <label>Username : </label>
                 <input type="email" value={email} placeholder='Enter your username' onChange={(e) => setEmail(e.target.value)}  />
                 <br/>
@@ -40,8 +40,7 @@ const Signup = () => {
                 <br/>
                 <button type="submit">Register</button>
                 <br/>
-                <p>Already Registered {<a href='./Login'>Login here</a>}</p>
-            </div>
+                <p>Already Registered : {<a href='./Login'>Login here</a>}</p>
         </form>
     </div>
   )
