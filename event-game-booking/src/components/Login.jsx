@@ -15,7 +15,7 @@ const Login = () => {
          if(credData.email===email && credData.password===password)
          {
             alert("Login Successfully");
-            navigate("/");
+            navigate("/gameList");
          }else{
             alert("Please Fill Valid Information");
          }
