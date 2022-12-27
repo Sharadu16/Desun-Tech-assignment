@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from "../styles/cart.module.css"
+import {useNavigate} from "react-router-dom"
 
 const Cart = () => {
+  const navigate = useNavigate();
   let data = JSON.parse(localStorage.getItem("data"));
   const addToCheck = (name) => {
     localStorage.setItem("title",name);
+     navigate("/checkOut");
   }
   const deleteItem = (id) => {
     console.log("deleted");
