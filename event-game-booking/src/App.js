@@ -8,6 +8,7 @@ import Signup from './components/Signup';
 import GameList from './components/GameList';
 import Cart from './components/Cart';
 import CheckOut from './components/CheckOut';
+import Payment from './components/Payment';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/gameList" element={<GameList/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkOut" element={<CheckOut/>} />
+        <Route path="/payment" element={<Payment/>} />
       </Routes>
     </>
   );
