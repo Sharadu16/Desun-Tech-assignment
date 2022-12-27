@@ -10,6 +10,10 @@ import Cart from './components/Cart';
 import CheckOut from './components/CheckOut';
 
 function App() {
+
+  const auth = localStorage.getItem("cred");
+  console.log(auth);
+  
   return (
     <>
       <Navbar/>

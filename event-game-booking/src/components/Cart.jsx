@@ -3,11 +3,12 @@ import styled from "../styles/cart.module.css"
 
 const Cart = () => {
   let data = JSON.parse(localStorage.getItem("data"));
-  const addToCheck = (item) => {
-     console.log(item);
+  const addToCheck = (name) => {
+    localStorage.setItem("title",name);
   }
   const deleteItem = (id) => {
     console.log("deleted");
+    
   }
 
   return (
@@ -18,7 +19,7 @@ const Cart = () => {
                     <img src={item.image} alt={item.name} />
                     <h2>{item.name}</h2>
                     <p className={styled.about}>{item.about}</p>
-                    <button onClick={() => addToCheck(item)}>CheckOut</button>
+                    <button onClick={() => addToCheck(item.name)}>CheckOut</button>
                     <button onClick={() => deleteItem(item.id)}>Remove</button>
                 </div>
             })

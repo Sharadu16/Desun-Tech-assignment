@@ -7,6 +7,7 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+    const [auth, setAuth] = useState(false);
 
     let credData = JSON.parse(localStorage.getItem("AuthInfo"))
 
@@ -15,9 +16,12 @@ const Login = () => {
     const HandleFormSubmit = () => {
          if(credData.email===email && credData.password===password)
          {
-            alert("Login Successfully");
-            navigate("/gameList");
+              setAuth(true);
+              localStorage.setItem("cred", auth);
+              alert("Login Successfully");
+              navigate("/gameList");
          }else{
+            setAuth(false);
             alert("Please Fill Valid Information");
          }
          setEmail("");
